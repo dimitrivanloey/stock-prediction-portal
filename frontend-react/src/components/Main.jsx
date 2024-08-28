@@ -14,7 +14,7 @@ const Main = () => {
             100-day and 200-day moving averages, essential indicators widely
             used by stock analists to inform trading and investment decisions.
           </p>
-          <Button text='Login' cls='btn-outline-warning' />
+          <Button text='Login' cls='btn-outline-warning' url='/login' />
         </div>
       </div>
     </>

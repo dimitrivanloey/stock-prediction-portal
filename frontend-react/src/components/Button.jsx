@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Button = ({ text, cls }) => {
+const Button = ({ text, cls, url }) => {
   return (
     <>
-      <a className={`btn ${cls}`} href=''>
+      <Link className={`btn ${cls}`} to={url}>
         {text}
-      </a>
+      </Link>
     </>
   )
 }
