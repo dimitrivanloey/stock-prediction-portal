@@ -16,11 +16,13 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault()
+
     setLoading(true)
     const userData = {
       username,
       password,
     }
+    console.log(userData)
 
     try {
       const response = await axios.post(
@@ -31,10 +33,11 @@ const Login = () => {
       localStorage.setItem('refreshToken', response.data.refresh)
       console.log('Login successful!')
       setIsLoggedIn(true)
-      navigate('/')
+      navigate('/dashboard')
     } catch (error) {
       console.error('Invalid Credentials')
       setError('Invalid Credentials')
+      console.log(response.data)
     } finally {
       setLoading(false)
     }
