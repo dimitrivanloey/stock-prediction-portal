@@ -12,7 +12,7 @@ import os
 from django.conf import settings
 from .utils import save_plot
 from sklearn.preprocessing import MinMaxScaler
-from keras.models import load_model
+# from keras.models import load_model
 from sklearn.metrics import mean_squared_error, r2_score
 
 
